@@ -1,0 +1,162 @@
+@charset "UTF-8";
+.wrapper{
+  width: 100%;
+}
+.inner{
+  width:1100px;
+  margin: 0 auto;
+}
+/* Q1 */
+.red_box1
+{
+  width: 400px;
+  height:400px;
+  background: #ff0000;
+  margin:0 auto;
+}
+@media screen and (max-width:960px) {
+  .red_box1{
+    width: 200px;
+    height:200px;
+  }
+}
+/* Q2 */
+.red_box2{
+  width: 300px;
+  height: 300px;
+  background:#ff0000;
+  margin: 0 auto;
+}
+@media screen and (max-width:960px){
+  .red_box2{
+    background:#007bff;
+  }
+}
+
+/* Q3 */
+.margin{
+  display: flex;
+  justify-content: center;
+}
+.blue_box,.green_box{
+  width: 300px;
+  height: 300px;
+}
+.blue_box{
+  background: #0008ff;
+  margin-right: 150px;
+}
+.green_box{
+  background: #22ff00;
+}
+@media screen and (max-width:960px){
+  .blue_box{
+    margin-right: 50px;
+  }
+}
+/* Q4 */
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.float{
+  width: 600px;
+  margin: 0 auto;
+}
+.red_box4,.blue_box4{
+  width: 300px;
+  height: 300px;
+  float:left;
+}
+.red_box4{
+  background: #ff0000;
+}
+.blue_box4{
+  background: #0008ff;
+}
+@media screen and (max-width:960px){
+  .red_box4,.blue_box4{
+    float: none;
+  }
+}
+
+/* Q5 */
+.flex{
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+
+}
+.red_box5,.blue_box5,.orange_box5{
+  width: 300px;
+  line-height: 300px;
+  text-align: center;
+}
+.red_box5{
+  background: #ff0000;
+}
+.blue_box5{
+  background:#0008ff;
+}
+.orange_box5{
+  background: #ff8400;
+}
+@media screen and (max-width:960px){
+  .flex{flex-direction: row-reverse;}
+}
+/* Q6 */
+.flex_box{
+  display: flex;
+  justify-content: center;
+}
+.green_box6,.yellow_box6,.pink_box6{
+  width: 300px;
+  line-height:300px;
+  text-align: center;
+}
+.green_box6{
+  background:#00ff51;
+  order:1;
+}
+.yellow_box6{
+  background: #d4ff00;
+  order:2;
+}
+.pink_box6{
+  background:#ff00e1;
+  order:3;
+}
+@media screen and (max-width:960px) {
+  .pink_box6{order:1;}
+  .green_box6{order:2;}
+  .yellow_box6{order:3;}
+}
+/* Q7 */
+.none{
+  display: flex;
+  justify-content: center;
+}
+.left,.red_box7,.blue_box7,.green_box7{
+  height: 300px;
+  width: 300px;
+}
+.red_box7{
+  background: #ff0000;
+  display: block;
+}
+.blue_box7{
+  display:none;
+  background: #0008ff;
+}
+.green_box7{
+  background: #00ff51;
+}
+@media screen and (max-width:960px){
+  .red_box7{
+    display: none;
+  }
+  .blue_box7{
+    display: block;
+  }
+}
