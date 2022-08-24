@@ -1,23 +1,53 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Responsive</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Responsive</title>
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/base.css">
-</head>
-
-<body>
-  <h2 class="question--title">Q7 サイズ変更</h2>
-  <h2 class="question--title">Q2 色変更</h2>
-  <h2 class="question--title">Q3 margin値の変更</h2>
-  <h2 class="question--title">Q4 floatの解除</h2>
-  <h2 class="question--title">Q5 flexboxの入れ替え(逆順)</h2>
-  <h2 class="question--title">Q6 flexboxの入れ替え(指定)</h2>
-  <h2 class="question--title">Q7 要素の表示・非表示</h2>
-</body>
-
+  <body>
+    <div class="wrapper">
+      <div class="inner">
+        <h2 class="question--title">Q7 サイズ変更</h2>
+        <div class="red_box1"></div>
+        <h2 class="question--title">Q2 色変更</h2>
+        <div class="red_box2"></div>
+        <h2 class="question--title">Q3 margin値の変更</h2>
+        <div class="margin">
+          <div class="blue_box"></div>
+          <div class="green_box"></div>
+        </div>
+        <h2 class="question--title">Q4 floatの解除</h2>
+        <div class="clearfix float">
+          <div class="red_box4"></div>
+          <div class="blue_box4"></div>
+        </div>
+        <h2 class="question--title">Q5 flexboxの入れ替え(逆順)</h2>
+        <div class="flex">
+          <div class="red_box5">A</div>
+          <div class="blue_box5">B</div>
+          <div class="orange_box5">C</div>
+        </div>
+        <h2 class="question--title">Q6 flexboxの入れ替え(指定)</h2>
+        <div class="flex_box">
+          <div class="green_box6">A</div>
+          <div class="yellow_box6">B</div>
+          <div class="pink_box6">C</div>
+        </div>
+        <h2 class="question--title">Q7 要素の表示・非表示</h2>
+        <div class="none">
+          <div class="left">
+            <div class="red_box7"></div>
+            <div class="blue_box7"></div>
+          </div>
+          <div class="green_box7"></div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
